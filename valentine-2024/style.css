@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
+
+canvas {
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    max-height: 75vh;
+    display: block;
+    margin: 0 auto;
+    border: solid 10px #330023;
+    cursor: move;
+    position: relative;
+    z-index: 2;
+}
+
+html {
+    height: 100%;
+    background: #470031;
+    color: #FFF;
+}
+
+body {
+    min-height: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+@media (min-width: 400px) and (min-height: 400px) and (max-width: 1200px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.controls {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    border: solid 10px #330023;
+    background: #330023;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: 'Patrick Hand SC', cursive;
+    text-transform: uppercase;
+}
+
+.controls>* {
+    padding: 0.5em 0.5em;
+}
+
+.mission {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.keys {
+    margin: 0.5em auto 0.25em;
+}
+
+.green b {
+    color: #62D2A2;
+}
+
+.pink b {
+    color: #DD5B82;
+}
+
+.throb {
+    animation: throb 1s linear infinite alternate;
+}
+
+@keyframes throb {
+    0% {
+        color: #FE9797;
+    }
+
+    100% {
+        color: #DD5B82;
+    }
+}
+
+kbd {
+    display: inline-block;
+    padding: 10px;
+    border: solid 1px #aaa;
+    background: #eee;
+    border-radius: 0.1em;
+    color: #555;
+    width: 2.5em;
+    height: 1.2em;
+    text-transform: none;
+    border-bottom-width: 0.3em;
+    border-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-family: monospace;
+    font-size: calc(13px);
+}
+
+[data-key] {
+    cursor: pointer;
+}
