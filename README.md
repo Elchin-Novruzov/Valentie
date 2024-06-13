@@ -15,4 +15,4 @@ JavaScript: Implementing game logic, interactivity, and animations to bring the 
 Join us in spreading love and joy with our Valentine's Day Alpaca Love Game! Play, share, and spread the love this Valentine's season. 💖
 
 
-LinkedIn(Preview) Post: https://www.linkedin.com/feed/update/urn:li:activity:7165344511722790912/
+LinkedIn Post: https://www.linkedin.com/feed/update/urn:li:activity:7165344511722790912/
